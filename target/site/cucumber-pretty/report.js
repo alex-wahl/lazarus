@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Test.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CareerPageSearch.feature");
 formatter.feature({
-  "name": "Test web site",
+  "name": "Testing Vacancies of the given page.",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@Test"
+      "name": "@CareerTi8mPageSearch"
     }
   ]
 });
@@ -19,11 +19,15 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "name": "I go to the main web page \"\u003cWeb Page\u003e\"",
+  "name": "I go to the web page \"\u003cWeb Page\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "I accept cookies",
   "keyword": "And "
 });
 formatter.step({
-  "name": "I start to check that in right top corner I have text \"\u003cText\u003e\" and link title \"\u003cTitle\u003e\"",
+  "name": "I check the search for the word \"\u003cSearching word\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -34,15 +38,13 @@ formatter.examples({
     {
       "cells": [
         "Web Page",
-        "Text",
-        "Title"
+        "Searching word"
       ]
     },
     {
       "cells": [
-        "https://en.wikipedia.org/wiki/Main_Page",
-        "Welcome to",
-        "Wikipedia"
+        "https://www.ti8m.com/de/career",
+        "Agile"
       ]
     }
   ]
@@ -53,7 +55,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Test"
+      "name": "@CareerTi8mPageSearch"
     }
   ]
 });
@@ -78,11 +80,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "I go to the main web page \"https://en.wikipedia.org/wiki/Main_Page\"",
-  "keyword": "And "
+  "name": "I go to the web page \"https://www.ti8m.com/de/career\"",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "lazarus.steps.web.wiki.Steps.i_go_to_the_main_web_page(java.lang.String)"
+  "location": "lazarus.steps.web.StepsForWeb.iGoToTheWebPage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -95,15 +97,14 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "I start to check that in right top corner I have text \"Welcome to\" and link title \"Wikipedia\"",
-  "keyword": "Then "
+  "name": "I accept cookies",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "lazarus.steps.web.wiki.Steps.iStartToCheckThatInRightTopCornerIHaveTextAndLinkTitle(java.lang.String,java.lang.String)"
+  "location": "lazarus.steps.web.StepsForWeb.iAcceptCookies()"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003cWikipedia[w]\u003e but was:\u003cWikipedia[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat lazarus.steps.web.wiki.Steps.iStartToCheckThatInRightTopCornerIHaveTextAndLinkTitle(Steps.java:28)\n\tat ✽.I start to check that in right top corner I have text \"Welcome to\" and link title \"Wikipedia\"(file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:7)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.embedding("image/png", "embedded2.png", null);
 formatter.afterstep({
@@ -112,50 +113,24 @@ formatter.afterstep({
 formatter.afterstep({
   "status": "passed"
 });
-formatter.after({
+formatter.step({
+  "name": "I check the search for the word \"Agile\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "lazarus.steps.web.StepsForWeb.iCheckTheSearchForTheWord(java.lang.String)"
+});
+formatter.result({
   "status": "passed"
 });
-formatter.uri("file:src/test/resources/features/Test2.feature");
-formatter.feature({
-  "name": "Test2 web site",
-  "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@Test2"
-    }
-  ]
+formatter.embedding("image/png", "embedded3.png", null);
+formatter.afterstep({
+  "status": "passed"
 });
-formatter.scenarioOutline({
-  "name": "Test2 web site",
-  "description": "",
-  "keyword": "Scenario Outline"
+formatter.afterstep({
+  "status": "passed"
 });
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "Web Page"
-      ]
-    },
-    {
-      "cells": [
-        "https://en.wikipedia.org/wiki/Main_Page"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Test2 web site",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Test2"
-    }
-  ]
+formatter.after({
+  "status": "passed"
 });
 });

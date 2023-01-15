@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.986">
-    <testcase classname="Testing Vacancies of the given page." name="Test web site" time="13.87">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.093">
+    <testcase classname="Testing Vacancies of the given page." name="Test web site" time="12.987">
         <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
 When I go to the web page "https://www.ti8m.com/de/career"..................passed
 And I accept cookies........................................................passed
-Then I check the search for the word "Agile"................................passed
+Then I check the search for the word "Engineer".............................passed
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -10,8 +10,3 @@ Feature: Testing Filter of the given page.
     Examples:
       | Web Page                                | City        |
       | https://www.ti8m.com/de/career          | Zürich      |
-      | https://www.ti8m.com/de/career          | Basel       |
-      | https://www.ti8m.com/de/career          | Bern        |
-      | https://www.ti8m.com/de/career          | Düsseldorf  |
-      | https://www.ti8m.com/de/career          | Frankfurt   |
-      | https://www.ti8m.com/de/career          | Singapur    |

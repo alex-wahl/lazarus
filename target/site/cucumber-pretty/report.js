@@ -44,7 +44,7 @@ formatter.examples({
     {
       "cells": [
         "https://www.ti8m.com/de/career",
-        "Agile"
+        "Engineer"
       ]
     }
   ]
@@ -114,7 +114,7 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "I check the search for the word \"Agile\"",
+  "name": "I check the search for the word \"Engineer\"",
   "keyword": "Then "
 });
 formatter.match({

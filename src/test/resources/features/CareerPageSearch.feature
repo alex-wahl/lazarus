@@ -8,5 +8,6 @@ Feature: Testing Vacancies of the given page.
     Then I check the search for the word "<Searching word>"
 
     Examples:
-      | Web Page                                | Searching word  |
-      | https://www.ti8m.com/de/career          | Agile           |
+      | Web Page                                | Searching word     |
+      | https://www.ti8m.com/de/career          | Engineer           |
+      | https://www.ti8m.com/de/career          | Agile              |

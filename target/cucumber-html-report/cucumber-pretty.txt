@@ -1,19 +1,19 @@
 
-@CareerTi8mPageSearch
-Scenario Outline: Test web site                              [90m# src/test/resources/features/CareerPageSearch.feature:12[0m
+@CareerTi8mPageVideoCheck
+Scenario Outline: Test web site                              [90m# src/test/resources/features/CareerPageVideoCheck.feature:12[0m
   [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.steps.DriverCreation.i_am_using_the_browser_Chrome()[0m
 
-    Embedding null [image/png 19199 bytes]
+    Embedding null [image/png 19280 bytes]
 
   [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.web.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
 
-    Embedding null [image/png 2346528 bytes]
+    Embedding null [image/png 2246368 bytes]
 
   [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.web.StepsForWeb.iAcceptCookies()[0m
 
-    Embedding null [image/png 2478244 bytes]
+    Embedding null [image/png 2589123 bytes]
 
-  [32mThen [0m[32mI check the search for the word [0m[32m[1m"Engineer"[0m            [90m# lazarus.steps.web.StepsForWeb.iCheckTheSearchForTheWord(java.lang.String)[0m
+  [32mThen [0m[32mI check a video[0m                                       [90m# lazarus.steps.web.StepsForWeb.iCheckAVideo()[0m
 
-    Embedding null [image/png 104188 bytes]
+    Embedding null [image/png 1152313 bytes]
 

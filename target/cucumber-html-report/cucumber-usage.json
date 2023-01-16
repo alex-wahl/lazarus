@@ -5,13 +5,13 @@
       {
         "name": "I am using the browser Chrome",
         "aggregatedDurations": {
-          "median": 0.243918,
-          "average": 0.243918
+          "median": 0.253144,
+          "average": 0.253144
         },
         "durations": [
           {
-            "duration": 0.243918,
-            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:5"
+            "duration": 0.253144,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageVideoCheck.feature:5"
           }
         ]
       }
@@ -23,13 +23,13 @@
       {
         "name": "I go to the web page \"https://www.ti8m.com/de/career\"",
         "aggregatedDurations": {
-          "median": 0.498117,
-          "average": 0.498117
+          "median": 0.440539,
+          "average": 0.440539
         },
         "durations": [
           {
-            "duration": 0.498117,
-            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:6"
+            "duration": 0.440539,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageVideoCheck.feature:6"
           }
         ]
       }
@@ -41,31 +41,31 @@
       {
         "name": "I accept cookies",
         "aggregatedDurations": {
-          "median": 0.116121,
-          "average": 0.116121
+          "median": 0.163287,
+          "average": 0.163287
         },
         "durations": [
           {
-            "duration": 0.116121,
-            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:7"
+            "duration": 0.163287,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageVideoCheck.feature:7"
           }
         ]
       }
     ]
   },
   {
-    "source": "I check the search for the word {string}",
+    "source": "I check a video",
     "steps": [
       {
-        "name": "I check the search for the word \"Engineer\"",
+        "name": "I check a video",
         "aggregatedDurations": {
-          "median": 0.550528,
-          "average": 0.550528
+          "median": 0.852463,
+          "average": 0.852463
         },
         "durations": [
           {
-            "duration": 0.550528,
-            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:8"
+            "duration": 0.852463,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageVideoCheck.feature:8"
           }
         ]
       }

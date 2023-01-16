@@ -5,8 +5,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import lazarus.steps.StepHelper;
 import lazarus.steps.pages.CareerPage;
-import lazarus.utilities.Mail;
-import lazarus.utilities.MySqlAccess;
 import org.junit.Assert;
 
 import java.io.IOException;
@@ -54,5 +52,33 @@ public class StepsForWeb extends StepHelper {
 
     @Then("I check filter for the city {string}")
     public void iCheckFilterForTheCity(String city) {
+        CareerPage CareerPage = new CareerPage(driver);
+        logger.info("Checking the filter feature");
+        Assert.assertEquals(CareerPage.FilterTheCity(city), city);
+        logger.info("Checked the filter feature");
+    }
+
+    @Then("I check filter for the branch {string}")
+    public void iCheckFilterForTheBranch(String branch) {
+        CareerPage CareerPage = new CareerPage(driver);
+        logger.info("Checking the filter feature");
+        Assert.assertEquals(CareerPage.FilterTheBranch(branch), branch);
+        logger.info("Checked the filter feature");
+    }
+
+    @Then("I check abo")
+    public void iCheckAbo() {
+        CareerPage CareerPage = new CareerPage(driver);
+        logger.info("Checking the abo");
+        Assert.assertEquals(CareerPage.MakeAbo(), "Besten Dank für deine Registrierung, du erhältst in Kürze eine Bestätigungsemail.");
+        logger.info("Checked the abo");
+    }
+
+    @Then("I check a video")
+    public void iCheckAVideo() {
+        CareerPage CareerPage = new CareerPage(driver);
+        logger.info("Checking the video");
+        Assert.assertTrue(CareerPage.IsVideoOnThePage());
+        logger.info("Checked the video");
     }
 }

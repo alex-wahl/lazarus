@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CareerPageSearch.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CareerPageVideoCheck.feature");
 formatter.feature({
-  "name": "Testing Vacancies of the given page.",
+  "name": "Testing Filter of the given page.",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@CareerTi8mPageSearch"
+      "name": "@CareerTi8mPageVideoCheck"
     }
   ]
 });
@@ -27,7 +27,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "I check the search for the word \"\u003cSearching word\u003e\"",
+  "name": "I check a video",
   "keyword": "Then "
 });
 formatter.examples({
@@ -37,14 +37,12 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "Web Page",
-        "Searching word"
+        "Web Page"
       ]
     },
     {
       "cells": [
-        "https://www.ti8m.com/de/career",
-        "Engineer"
+        "https://www.ti8m.com/de/career"
       ]
     }
   ]
@@ -55,7 +53,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@CareerTi8mPageSearch"
+      "name": "@CareerTi8mPageVideoCheck"
     }
   ]
 });
@@ -72,10 +70,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", null);
 formatter.afterstep({
   "status": "passed"
 });
+formatter.embedding("image/png", "embedded0.png", null);
 formatter.afterstep({
   "status": "passed"
 });
@@ -89,10 +87,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png", null);
 formatter.afterstep({
   "status": "passed"
 });
+formatter.embedding("image/png", "embedded1.png", null);
 formatter.afterstep({
   "status": "passed"
 });
@@ -106,27 +104,27 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.afterstep({
+  "status": "passed"
+});
 formatter.embedding("image/png", "embedded2.png", null);
 formatter.afterstep({
   "status": "passed"
 });
-formatter.afterstep({
-  "status": "passed"
-});
 formatter.step({
-  "name": "I check the search for the word \"Engineer\"",
+  "name": "I check a video",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "lazarus.steps.web.StepsForWeb.iCheckTheSearchForTheWord(java.lang.String)"
+  "location": "lazarus.steps.web.StepsForWeb.iCheckAVideo()"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded3.png", null);
 formatter.afterstep({
   "status": "passed"
 });
+formatter.embedding("image/png", "embedded3.png", null);
 formatter.afterstep({
   "status": "passed"
 });

@@ -1,4 +1,4 @@
-pipelineJob('WikipediaHomePage') {
+pipelineJob('WebTesting') {
   definition {
    cps {
     script('''pipeline {
@@ -11,8 +11,8 @@ pipelineJob('WikipediaHomePage') {
        stage('Fetching data from GitHub') {
         steps {
          git branch: 'master',
-          credentialsId: '21d34ebb-1ee7-4bfd-a2bb-e468de987dd1',
-          url: 'https://github.com/studyentwickler/lazarus.git'
+          credentialsId: '82c88b26-dc07-4da7-851e-2483144c620f',
+          url: 'https://github.com/alex-wahl/lazarus.git'
          sh "ls -lat"
         }
        }
@@ -20,7 +20,7 @@ pipelineJob('WikipediaHomePage') {
        stage('Code compiling') {
         steps {
          echo 'Stage to execute the test case'
-         sh '/home/linuxbrew/.linuxbrew/bin/mvn test -Dcucumber.filter.tags="@WikipediaHomePage"'
+         sh '/home/linuxbrew/.linuxbrew/bin/mvn test -Dcucumber.filter.tags="@CareerTi8mCareerAvailability"'
         }
        }
 
@@ -52,7 +52,7 @@ pipelineJob('WikipediaHomePage') {
    description('All Lazarus Jobs')
    jobFilters {
     jobs {
-     name('WikipediaHomePage')
+     name('Ti8m')
     }
    }
   }

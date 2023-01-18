@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.008">
-    <testcase classname="Testing Filter of the given page." name="Test web site" time="12.887">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.267">
+    <testcase classname="Testing availability of Open positions" name="Test career availability" time="18.127">
         <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
 When I go to the web page "https://www.ti8m.com/de/career"..................passed
+And I check the status code of the server "200".............................passed
 And I accept cookies........................................................passed
-Then I check a video........................................................passed
+Then I check the title Offene Stellen "Offene Stellen"......................passed
 ]]></system-out>
     </testcase>
 </testsuite>

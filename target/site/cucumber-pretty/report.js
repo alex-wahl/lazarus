@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CareerPageVideoCheck.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CareerPageAvailability.feature");
 formatter.feature({
-  "name": "Testing Filter of the given page.",
+  "name": "Testing availability of Open positions",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@CareerTi8mPageVideoCheck"
+      "name": "@CareerTi8mCareerAvailability"
     }
   ]
 });
 formatter.scenarioOutline({
-  "name": "Test web site",
+  "name": "Test career availability",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -23,11 +23,15 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
+  "name": "I check the status code of the server \"\u003cStatus\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
   "name": "I accept cookies",
   "keyword": "And "
 });
 formatter.step({
-  "name": "I check a video",
+  "name": "I check the title Offene Stellen \"\u003cTitel\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -37,23 +41,27 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "Web Page"
+        "Web Page",
+        "Status",
+        "Titel"
       ]
     },
     {
       "cells": [
-        "https://www.ti8m.com/de/career"
+        "https://www.ti8m.com/de/career",
+        "200",
+        "Offene Stellen"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Test web site",
+  "name": "Test career availability",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@CareerTi8mPageVideoCheck"
+      "name": "@CareerTi8mCareerAvailability"
     }
   ]
 });
@@ -70,10 +78,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.embedding("image/png", "embedded0.png", null);
 formatter.afterstep({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", null);
 formatter.afterstep({
   "status": "passed"
 });
@@ -87,10 +95,27 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.embedding("image/png", "embedded1.png", null);
 formatter.afterstep({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png", null);
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I check the status code of the server \"200\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "lazarus.steps.web.StepsForWeb.iCheckTheStatusCodeOfTheServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded2.png", null);
+formatter.afterstep({
+  "status": "passed"
+});
 formatter.afterstep({
   "status": "passed"
 });
@@ -104,27 +129,27 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.embedding("image/png", "embedded3.png", null);
 formatter.afterstep({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded2.png", null);
 formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "I check a video",
+  "name": "I check the title Offene Stellen \"Offene Stellen\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "lazarus.steps.web.StepsForWeb.iCheckAVideo()"
+  "location": "lazarus.steps.web.StepsForWeb.iCheckTheTitleOffeneStellen(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.embedding("image/png", "embedded4.png", null);
 formatter.afterstep({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded3.png", null);
 formatter.afterstep({
   "status": "passed"
 });

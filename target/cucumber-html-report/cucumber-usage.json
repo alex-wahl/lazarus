@@ -5,13 +5,13 @@
       {
         "name": "I am using the browser Chrome",
         "aggregatedDurations": {
-          "median": 0.253144,
-          "average": 0.253144
+          "median": 0.351155,
+          "average": 0.351155
         },
         "durations": [
           {
-            "duration": 0.253144,
-            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageVideoCheck.feature:5"
+            "duration": 0.351155,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageAvailability.feature:5"
           }
         ]
       }
@@ -23,13 +23,31 @@
       {
         "name": "I go to the web page \"https://www.ti8m.com/de/career\"",
         "aggregatedDurations": {
-          "median": 0.440539,
-          "average": 0.440539
+          "median": 0.537387,
+          "average": 0.537387
         },
         "durations": [
           {
-            "duration": 0.440539,
-            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageVideoCheck.feature:6"
+            "duration": 0.537387,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageAvailability.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I check the status code of the server {string}",
+    "steps": [
+      {
+        "name": "I check the status code of the server \"200\"",
+        "aggregatedDurations": {
+          "median": 0.639345,
+          "average": 0.639345
+        },
+        "durations": [
+          {
+            "duration": 0.639345,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageAvailability.feature:7"
           }
         ]
       }
@@ -41,31 +59,31 @@
       {
         "name": "I accept cookies",
         "aggregatedDurations": {
-          "median": 0.163287,
-          "average": 0.163287
+          "median": 0.087992,
+          "average": 0.087992
         },
         "durations": [
           {
-            "duration": 0.163287,
-            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageVideoCheck.feature:7"
+            "duration": 0.087992,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageAvailability.feature:8"
           }
         ]
       }
     ]
   },
   {
-    "source": "I check a video",
+    "source": "I check the title Offene Stellen {string}",
     "steps": [
       {
-        "name": "I check a video",
+        "name": "I check the title Offene Stellen \"Offene Stellen\"",
         "aggregatedDurations": {
-          "median": 0.852463,
-          "average": 0.852463
+          "median": 0.541229,
+          "average": 0.541229
         },
         "durations": [
           {
-            "duration": 0.852463,
-            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageVideoCheck.feature:8"
+            "duration": 0.541229,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageAvailability.feature:9"
           }
         ]
       }

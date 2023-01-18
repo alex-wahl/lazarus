@@ -1,10 +1,14 @@
 package lazarus.steps;
 
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.logging.Level;
 
 public class DriverCreation extends StepHelper {
@@ -14,7 +18,7 @@ public class DriverCreation extends StepHelper {
     private static final String LINUX_DRIVER_PATH = "src/test/resources/drivers/chromedriver_linux";
 
     @Given("I am using the browser Chrome")
-    public void i_am_using_the_browser_Chrome() {
+    public void i_am_using_the_browser_Chrome() throws MalformedURLException {
 
         String oS = System.getProperty("os.name").toLowerCase();
         ChromeOptions options = new ChromeOptions();
@@ -53,7 +57,6 @@ public class DriverCreation extends StepHelper {
         java.util.logging.Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);
 
         // End of block
-
         options.addArguments("test-type");
         options.addArguments("--js-flags=--expose-gc");
         options.addArguments("--enable-precise-memory-info");
@@ -64,10 +67,21 @@ public class DriverCreation extends StepHelper {
         options.addArguments("window-size=1900,1084");
         options.addArguments("start-maximized");
         options.addArguments("--disable-infobars");
+        options.addArguments("--ignore-ssl-errors=yes");
+        options.addArguments("--ignore-certificate-errors");
+        //options.setHeadless(true);
 
         logger.info("############ Opening a browser Chrome ############");
 
-        driver = new ChromeDriver(options);
+        if (oS.contains("linux")) {
+
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+
+        } else {
+
+            driver = new ChromeDriver(options);
+
+        }
 
     }
 

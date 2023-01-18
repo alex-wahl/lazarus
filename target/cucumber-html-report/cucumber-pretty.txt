@@ -1,19 +1,23 @@
 
-@CareerTi8mPageVideoCheck
-Scenario Outline: Test web site                              [90m# src/test/resources/features/CareerPageVideoCheck.feature:12[0m
+@CareerTi8mCareerAvailability
+Scenario Outline: Test career availability                   [90m# src/test/resources/features/CareerPageAvailability.feature:14[0m
   [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.steps.DriverCreation.i_am_using_the_browser_Chrome()[0m
 
-    Embedding null [image/png 19280 bytes]
+    Embedding null [image/png 19172 bytes]
 
   [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.web.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
 
-    Embedding null [image/png 2246368 bytes]
+    Embedding null [image/png 2331842 bytes]
+
+  [32mAnd [0m[32mI check the status code of the server [0m[32m[1m"200"[0m            [90m# lazarus.steps.web.StepsForWeb.iCheckTheStatusCodeOfTheServer(java.lang.String)[0m
+
+    Embedding null [image/png 2278296 bytes]
 
   [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.web.StepsForWeb.iAcceptCookies()[0m
 
-    Embedding null [image/png 2589123 bytes]
+    Embedding null [image/png 2510407 bytes]
 
-  [32mThen [0m[32mI check a video[0m                                       [90m# lazarus.steps.web.StepsForWeb.iCheckAVideo()[0m
+  [32mThen [0m[32mI check the title Offene Stellen [0m[32m[1m"Offene Stellen"[0m     [90m# lazarus.steps.web.StepsForWeb.iCheckTheTitleOffeneStellen(java.lang.String)[0m
 
-    Embedding null [image/png 1152313 bytes]
+    Embedding null [image/png 107560 bytes]
 

@@ -1,17 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="29.481">
-    <testcase classname="Testing Vacancies of the given page." name="Test web site" time="15.413">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="131.615">
+    <testcase classname="Testing Filter of the given page." name="Test web site" time="17.154">
+        <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
+When I go to the web page "https://www.ti8m.com/de/career"..................passed
+And I accept cookies........................................................passed
+Then I check abo............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing availability of Open positions" name="Test career availability" time="15.985">
+        <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
+When I go to the web page "https://www.ti8m.com/de/career"..................passed
+And I check the status code of the server "200".............................passed
+And I accept cookies........................................................passed
+Then I check the title Offene Stellen "Offene Stellen"......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Filter of the given page." name="Test web site" time="15.512">
+        <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
+When I go to the web page "https://www.ti8m.com/de/career"..................passed
+And I accept cookies........................................................passed
+Then I check filter for the branch "Consulting".............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Filter of the given page." name="Test web site 2" time="15.34">
+        <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
+When I go to the web page "https://www.ti8m.com/de/career"..................passed
+And I accept cookies........................................................passed
+Then I check filter for the branch "Engineering"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Filter of the given page." name="Test web site" time="12.957">
+        <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
+When I go to the web page "https://www.ti8m.com/de/career"..................passed
+And I accept cookies........................................................passed
+Then I check filter for the city "Zürich"...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Filter of the given page." name="Test web site 2" time="13.245">
+        <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
+When I go to the web page "https://www.ti8m.com/de/career"..................passed
+And I accept cookies........................................................passed
+Then I check filter for the city "Basel"....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Vacancies of the given page." name="Test web site" time="14.487">
         <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
 When I go to the web page "https://www.ti8m.com/de/career"..................passed
 And I accept cookies........................................................passed
 Then I check the search for the word "Engineer".............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Testing Vacancies of the given page." name="Test web site 2" time="13.893">
+    <testcase classname="Testing Vacancies of the given page." name="Test web site 2" time="14.176">
         <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
 When I go to the web page "https://www.ti8m.com/de/career"..................passed
 And I accept cookies........................................................passed
 Then I check the search for the word "Agile"................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Filter of the given page." name="Test web site" time="12.531">
+        <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
+When I go to the web page "https://www.ti8m.com/de/career"..................passed
+And I accept cookies........................................................passed
+Then I check a video........................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

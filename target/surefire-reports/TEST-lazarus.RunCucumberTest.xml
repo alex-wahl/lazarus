@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="lazarus.RunCucumberTest" time="29.866" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="lazarus.RunCucumberTest" time="132.349" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="cucumber.options" value="--tags @CareerTi8mPageSearch"/>
     <property name="java.vm.version" value="19.0.1"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/19.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
     <property name="maven.multiModuleProjectDirectory" value="/Users/alex/Desktop/github/lazarus"/>
@@ -42,7 +41,7 @@
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.7/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="19"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -D cucumber.options=--tags @CareerTi8mPageSearch"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.home" value="/usr/local/Cellar/openjdk/19.0.1/libexec/openjdk.jdk/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
@@ -59,6 +58,13 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.vendor.version" value="Homebrew"/>
   </properties>
-  <testcase name="Test web site" classname="Testing Vacancies of the given page." time="15.565"/>
-  <testcase name="Test web site" classname="Testing Vacancies of the given page." time="13.896"/>
+  <testcase name="Test web site" classname="Testing Filter of the given page." time="17.341"/>
+  <testcase name="Test web site" classname="Testing Filter of the given page." time="15.515"/>
+  <testcase name="Test web site" classname="Testing Filter of the given page." time="15.346"/>
+  <testcase name="Test web site" classname="Testing Filter of the given page." time="12.961"/>
+  <testcase name="Test web site" classname="Testing Filter of the given page." time="13.248"/>
+  <testcase name="Test web site" classname="Testing Filter of the given page." time="12.533"/>
+  <testcase name="Test career availability" classname="Testing availability of Open positions" time="15.988"/>
+  <testcase name="Test web site" classname="Testing Vacancies of the given page." time="14.489"/>
+  <testcase name="Test web site" classname="Testing Vacancies of the given page." time="14.178"/>
 </testsuite>

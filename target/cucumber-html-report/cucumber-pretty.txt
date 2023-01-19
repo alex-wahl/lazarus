@@ -1,4 +1,122 @@
 
+@CareerTi8mPageAbo
+Scenario Outline: Test web site                              [90m# src/test/resources/features/CareerPageAbo.feature:12[0m
+  [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.utilities.DriverCreation.i_am_using_the_browser_Chrome()[0m
+
+    Embedding null [image/png 19280 bytes]
+
+  [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
+
+    Embedding null [image/png 2246368 bytes]
+
+  [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.StepsForWeb.iAcceptCookies()[0m
+
+    Embedding null [image/png 2420249 bytes]
+
+  [32mThen [0m[32mI check abo[0m                                           [90m# lazarus.steps.StepsForWeb.iCheckAbo()[0m
+
+    Embedding null [image/png 47468 bytes]
+
+
+@CareerTi8mCareerAvailability
+Scenario Outline: Test career availability                   [90m# src/test/resources/features/CareerPageAvailability.feature:14[0m
+  [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.utilities.DriverCreation.i_am_using_the_browser_Chrome()[0m
+
+    Embedding null [image/png 19307 bytes]
+
+  [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
+
+    Embedding null [image/png 2391676 bytes]
+
+  [32mAnd [0m[32mI check the status code of the server [0m[32m[1m"200"[0m            [90m# lazarus.steps.StepsForWeb.iCheckTheStatusCodeOfTheServer(java.lang.String)[0m
+
+    Embedding null [image/png 2301346 bytes]
+
+  [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.StepsForWeb.iAcceptCookies()[0m
+
+    Embedding null [image/png 2526572 bytes]
+
+  [32mThen [0m[32mI check the title Offene Stellen [0m[32m[1m"Offene Stellen"[0m     [90m# lazarus.steps.StepsForWeb.iCheckTheTitleOffeneStellen(java.lang.String)[0m
+
+    Embedding null [image/png 108108 bytes]
+
+
+@CareerTi8mPageFilterBranch
+Scenario Outline: Test web site                              [90m# src/test/resources/features/CareerPageFilterBranch.feature:12[0m
+  [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.utilities.DriverCreation.i_am_using_the_browser_Chrome()[0m
+
+    Embedding null [image/png 19307 bytes]
+
+  [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
+
+    Embedding null [image/png 2249960 bytes]
+
+  [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.StepsForWeb.iAcceptCookies()[0m
+
+    Embedding null [image/png 2444036 bytes]
+
+  [32mThen [0m[32mI check filter for the branch [0m[32m[1m"Consulting"[0m            [90m# lazarus.steps.StepsForWeb.iCheckFilterForTheBranch(java.lang.String)[0m
+
+    Embedding null [image/png 171339 bytes]
+
+
+@CareerTi8mPageFilterBranch
+Scenario Outline: Test web site                              [90m# src/test/resources/features/CareerPageFilterBranch.feature:13[0m
+  [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.utilities.DriverCreation.i_am_using_the_browser_Chrome()[0m
+
+    Embedding null [image/png 19307 bytes]
+
+  [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
+
+    Embedding null [image/png 2249960 bytes]
+
+  [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.StepsForWeb.iAcceptCookies()[0m
+
+    Embedding null [image/png 2444036 bytes]
+
+  [32mThen [0m[32mI check filter for the branch [0m[32m[1m"Engineering"[0m           [90m# lazarus.steps.StepsForWeb.iCheckFilterForTheBranch(java.lang.String)[0m
+
+    Embedding null [image/png 220267 bytes]
+
+
+@CareerTi8mPageFilterCity
+Scenario Outline: Test web site                              [90m# src/test/resources/features/CareerPageFilterCity.feature:12[0m
+  [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.utilities.DriverCreation.i_am_using_the_browser_Chrome()[0m
+
+    Embedding null [image/png 19307 bytes]
+
+  [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
+
+    Embedding null [image/png 2301346 bytes]
+
+  [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.StepsForWeb.iAcceptCookies()[0m
+
+    Embedding null [image/png 2495204 bytes]
+
+  [32mThen [0m[32mI check filter for the city [0m[32m[1m"Zürich"[0m                  [90m# lazarus.steps.StepsForWeb.iCheckFilterForTheCity(java.lang.String)[0m
+
+    Embedding null [image/png 120766 bytes]
+
+
+@CareerTi8mPageFilterCity
+Scenario Outline: Test web site                              [90m# src/test/resources/features/CareerPageFilterCity.feature:13[0m
+  [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.utilities.DriverCreation.i_am_using_the_browser_Chrome()[0m
+
+    Embedding null [image/png 19307 bytes]
+
+  [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
+
+    Embedding null [image/png 2249960 bytes]
+
+  [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.StepsForWeb.iAcceptCookies()[0m
+
+    Embedding null [image/png 2444036 bytes]
+
+  [32mThen [0m[32mI check filter for the city [0m[32m[1m"Basel"[0m                   [90m# lazarus.steps.StepsForWeb.iCheckFilterForTheCity(java.lang.String)[0m
+
+    Embedding null [image/png 141971 bytes]
+
+
 @CareerTi8mPageSearch
 Scenario Outline: Test web site                              [90m# src/test/resources/features/CareerPageSearch.feature:12[0m
   [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.utilities.DriverCreation.i_am_using_the_browser_Chrome()[0m
@@ -7,11 +125,11 @@ Scenario Outline: Test web site                              [90m# src/test/res
 
   [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
 
-    Embedding null [image/png 2432601 bytes]
+    Embedding null [image/png 2294066 bytes]
 
   [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.StepsForWeb.iAcceptCookies()[0m
 
-    Embedding null [image/png 2495204 bytes]
+    Embedding null [image/png 2475573 bytes]
 
   [32mThen [0m[32mI check the search for the word [0m[32m[1m"Engineer"[0m            [90m# lazarus.steps.StepsForWeb.iCheckTheSearchForTheWord(java.lang.String)[0m
 
@@ -22,17 +140,36 @@ Scenario Outline: Test web site                              [90m# src/test/res
 Scenario Outline: Test web site                              [90m# src/test/resources/features/CareerPageSearch.feature:13[0m
   [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.utilities.DriverCreation.i_am_using_the_browser_Chrome()[0m
 
-    Embedding null [image/png 19334 bytes]
+    Embedding null [image/png 19307 bytes]
 
   [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
 
-    Embedding null [image/png 2473125 bytes]
+    Embedding null [image/png 2315310 bytes]
 
   [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.StepsForWeb.iAcceptCookies()[0m
 
-    Embedding null [image/png 2544892 bytes]
+    Embedding null [image/png 2515153 bytes]
 
   [32mThen [0m[32mI check the search for the word [0m[32m[1m"Agile"[0m               [90m# lazarus.steps.StepsForWeb.iCheckTheSearchForTheWord(java.lang.String)[0m
 
-    Embedding null [image/png 105701 bytes]
+    Embedding null [image/png 104486 bytes]
+
+
+@CareerTi8mPageVideoCheck
+Scenario Outline: Test web site                              [90m# src/test/resources/features/CareerPageVideoCheck.feature:12[0m
+  [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.utilities.DriverCreation.i_am_using_the_browser_Chrome()[0m
+
+    Embedding null [image/png 19307 bytes]
+
+  [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
+
+    Embedding null [image/png 2327115 bytes]
+
+  [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.StepsForWeb.iAcceptCookies()[0m
+
+    Embedding null [image/png 2475573 bytes]
+
+  [32mThen [0m[32mI check a video[0m                                       [90m# lazarus.steps.StepsForWeb.iCheckAVideo()[0m
+
+    Embedding null [image/png 1149218 bytes]
 

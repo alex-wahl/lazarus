@@ -7,4 +7,6 @@ lazarus/utilities/Mail.class
 lazarus/utilities/TestConstants.class
 lazarus/utilities/Authentication.class
 lazarus/utilities/MySqlAccess.class
+lazarus/backend/model/ti8m/Career.class
+lazarus/backend/Requests.class
 lazarus/pages/web/CareerPage.class

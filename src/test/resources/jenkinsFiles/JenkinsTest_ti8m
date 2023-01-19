@@ -17,7 +17,7 @@ pipeline {
        stage('Code compiling') {
         steps {
          echo 'Stage to execute the test case'
-         sh '/home/linuxbrew/.linuxbrew/bin/mvn test -Dcucumber.filter.tags="@CareerTi8mCareerAvailability"'
+         sh 'mvn test -Dcucumber.filter.tags="@CareerTi8mCareerAvailability"'
         }
        }
 

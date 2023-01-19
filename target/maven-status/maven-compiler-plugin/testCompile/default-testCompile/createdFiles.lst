@@ -1,10 +1,10 @@
-lazarus/steps/pages/CareerPage.class
+lazarus/steps/StepsForWeb.class
 lazarus/steps/StepHelper.class
-lazarus/steps/DriverCreation.class
 lazarus/RunCucumberTest.class
+lazarus/utilities/DriverCreation.class
 lazarus/steps/StepDefinitions.class
 lazarus/utilities/Mail.class
 lazarus/utilities/TestConstants.class
 lazarus/utilities/Authentication.class
 lazarus/utilities/MySqlAccess.class
-lazarus/steps/web/StepsForWeb.class
+lazarus/pages/web/CareerPage.class

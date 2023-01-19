@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
                 "usage:target/cucumber-html-report/cucumber-usage.json",
                 "junit:target/cucumber-html-report/cucumber-results.xml"
         },
-        glue = {"lazarus.steps"},
+        glue = {"lazarus.steps", "lazarus.utilities"},
         strict = true
 )
 

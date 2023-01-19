@@ -1,1 +1,99 @@
-[]
+[
+  {
+    "source": "I am using the browser Chrome",
+    "steps": [
+      {
+        "name": "I am using the browser Chrome",
+        "aggregatedDurations": {
+          "median": 0.6618285,
+          "average": 0.6618285
+        },
+        "durations": [
+          {
+            "duration": 0.521064,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:5"
+          },
+          {
+            "duration": 0.802593,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the web page {string}",
+    "steps": [
+      {
+        "name": "I go to the web page \"https://www.ti8m.com/de/career\"",
+        "aggregatedDurations": {
+          "median": 0.659632,
+          "average": 0.659632
+        },
+        "durations": [
+          {
+            "duration": 0.676506,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:6"
+          },
+          {
+            "duration": 0.642758,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I accept cookies",
+    "steps": [
+      {
+        "name": "I accept cookies",
+        "aggregatedDurations": {
+          "median": 0.11089,
+          "average": 0.11089
+        },
+        "durations": [
+          {
+            "duration": 0.070545,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:7"
+          },
+          {
+            "duration": 0.151235,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I check the search for the word {string}",
+    "steps": [
+      {
+        "name": "I check the search for the word \"Engineer\"",
+        "aggregatedDurations": {
+          "median": 0.616409,
+          "average": 0.616409
+        },
+        "durations": [
+          {
+            "duration": 0.616409,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:8"
+          }
+        ]
+      },
+      {
+        "name": "I check the search for the word \"Agile\"",
+        "aggregatedDurations": {
+          "median": 0.859142,
+          "average": 0.859142
+        },
+        "durations": [
+          {
+            "duration": 0.859142,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageSearch.feature:8"
+          }
+        ]
+      }
+    ]
+  }
+]

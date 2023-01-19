@@ -1,5 +1,6 @@
-# Lazarus Test Framework
+[![ti8m](https://github.com/alex-wahl/lazarus/actions/workflows/ti8m.yml/badge.svg)](https://github.com/alex-wahl/lazarus/actions/workflows/ti8m.yml)
 
+# Lazarus Test Framework
 
 ## Run in docker
 

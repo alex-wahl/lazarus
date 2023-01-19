@@ -1,0 +1,19 @@
+name: ti8m
+
+on: [push, pull_request]
+
+jobs:
+  CareerAvailability:
+    name: Check Career Availability
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check Career Availability
+        run: sudo docker compose run --rm test mvn test -Dcucumber.options="--tags @CareerTi8mCareerAvailability"
+  VideoCheck:
+    name: Video check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check Video Availability
+        run: sudo docker compose run --rm test mvn test -Dcucumber.options="--tags @CareerTi8mPageVideoCheck"

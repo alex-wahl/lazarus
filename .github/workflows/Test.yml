@@ -8,7 +8,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Docker
-        uses: docker/setup-buildx-action@v1
       - name: Check Career Availability
         run: sudo docker compose run --rm test mvn test -D cucumber.options="--tags @CareerTi8mCareerAvailability"

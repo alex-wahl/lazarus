@@ -1,5 +1,10 @@
 # Lazarus Test Framework
 
+
+## Run in docker
+
+```docker compose run --rm test mvn test -Dcucumber.options="--tags @CareerTi8mCareerAvailability"```
+
 This framework is written in Java and based on 
 
 - Maven

@@ -10,6 +10,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Set up Docker
         uses: actions/setup-docker@v2
-      - name: Build and Test with Maven in Docker
-        run: |
-          docker run -v ${PWD}:/app -w /app maven:3.6.3-jdk-11 mvn test -D cucumber.options="--tags @CareerTi8mPageVideoCheck"
+      - name: Check Career Availability
+        run: sudo docker compose run --rm test mvn test -D cucumber.options="--tags @CareerTi8mCareerAvailability"

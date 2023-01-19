@@ -58,6 +58,8 @@ public class DriverCreation extends StepHelper {
 
         // End of block
         options.addArguments("test-type");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--js-flags=--expose-gc");
         options.addArguments("--enable-precise-memory-info");
         options.addArguments("--disable-popup-blocking");
@@ -69,19 +71,11 @@ public class DriverCreation extends StepHelper {
         options.addArguments("--disable-infobars");
         options.addArguments("--ignore-ssl-errors=yes");
         options.addArguments("--ignore-certificate-errors");
-        //options.setHeadless(true);
+        options.setHeadless(true);
 
         logger.info("############ Opening a browser Chrome ############");
 
-        if (oS.contains("linux")) {
-
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
-
-        } else {
-
-            driver = new ChromeDriver(options);
-
-        }
+        driver = new ChromeDriver(options);
 
     }
 

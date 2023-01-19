@@ -1,14 +1,10 @@
 package lazarus.steps;
 
 import io.cucumber.java.en.Given;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
 
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.logging.Level;
 
 public class DriverCreation extends StepHelper {
@@ -71,7 +67,6 @@ public class DriverCreation extends StepHelper {
         options.addArguments("--disable-infobars");
         options.addArguments("--ignore-ssl-errors=yes");
         options.addArguments("--ignore-certificate-errors");
-        options.setHeadless(true);
 
         logger.info("############ Opening a browser Chrome ############");
 

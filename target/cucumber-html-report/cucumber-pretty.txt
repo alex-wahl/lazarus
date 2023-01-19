@@ -3,21 +3,21 @@
 Scenario Outline: Test career availability                   [90m# src/test/resources/features/CareerPageAvailability.feature:14[0m
   [32mGiven [0m[32mI am using the browser Chrome[0m                        [90m# lazarus.steps.DriverCreation.i_am_using_the_browser_Chrome()[0m
 
-    Embedding null [image/png 19172 bytes]
+    Embedding null [image/png 18983 bytes]
 
   [32mWhen [0m[32mI go to the web page [0m[32m[1m"https://www.ti8m.com/de/career"[0m [90m# lazarus.steps.web.StepsForWeb.iGoToTheWebPage(java.lang.String)[0m
 
-    Embedding null [image/png 2331842 bytes]
+    Embedding null [image/png 2353676 bytes]
 
   [32mAnd [0m[32mI check the status code of the server [0m[32m[1m"200"[0m            [90m# lazarus.steps.web.StepsForWeb.iCheckTheStatusCodeOfTheServer(java.lang.String)[0m
 
-    Embedding null [image/png 2278296 bytes]
+    Embedding null [image/png 2243430 bytes]
 
   [32mAnd [0m[32mI accept cookies[0m                                       [90m# lazarus.steps.web.StepsForWeb.iAcceptCookies()[0m
 
-    Embedding null [image/png 2510407 bytes]
+    Embedding null [image/png 2447127 bytes]
 
   [32mThen [0m[32mI check the title Offene Stellen [0m[32m[1m"Offene Stellen"[0m     [90m# lazarus.steps.web.StepsForWeb.iCheckTheTitleOffeneStellen(java.lang.String)[0m
 
-    Embedding null [image/png 107560 bytes]
+    Embedding null [image/png 107224 bytes]
 

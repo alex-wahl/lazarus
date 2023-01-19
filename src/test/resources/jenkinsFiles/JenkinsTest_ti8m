@@ -1,7 +1,4 @@
-pipelineJob('WebTesting') {
-  definition {
-   cps {
-    script('''pipeline {
+pipeline {
       agent any
       triggers {
        cron('15 02 * * 5')
@@ -10,8 +7,8 @@ pipelineJob('WebTesting') {
       stages {
        stage('Fetching data from GitHub') {
         steps {
-         git branch: 'master',
-          credentialsId: '82c88b26-dc07-4da7-851e-2483144c620f',
+         git branch: 'testing_ti8m',
+          credentialsId: '8f0c6cb8-ba71-4a29-a535-661ee2e3f06d',
           url: 'https://github.com/alex-wahl/lazarus.git'
          sh "ls -lat"
         }
@@ -42,13 +39,7 @@ pipelineJob('WebTesting') {
        }
       }
      }
-     '''.stripIndent())
-     sandbox()
-    }
-   }
-  }
-
-  buildMonitorView('Lazarus') {
+buildMonitorView('Lazarus') {
    description('All Lazarus Jobs')
    jobFilters {
     jobs {

@@ -5,12 +5,12 @@
       {
         "name": "I am using the browser Chrome",
         "aggregatedDurations": {
-          "median": 0.351155,
-          "average": 0.351155
+          "median": 0.210648,
+          "average": 0.210648
         },
         "durations": [
           {
-            "duration": 0.351155,
+            "duration": 0.210648,
             "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageAvailability.feature:5"
           }
         ]
@@ -23,12 +23,12 @@
       {
         "name": "I go to the web page \"https://www.ti8m.com/de/career\"",
         "aggregatedDurations": {
-          "median": 0.537387,
-          "average": 0.537387
+          "median": 0.785684,
+          "average": 0.785684
         },
         "durations": [
           {
-            "duration": 0.537387,
+            "duration": 0.785684,
             "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageAvailability.feature:6"
           }
         ]
@@ -41,12 +41,12 @@
       {
         "name": "I check the status code of the server \"200\"",
         "aggregatedDurations": {
-          "median": 0.639345,
-          "average": 0.639345
+          "median": 0.777299,
+          "average": 0.777299
         },
         "durations": [
           {
-            "duration": 0.639345,
+            "duration": 0.777299,
             "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageAvailability.feature:7"
           }
         ]
@@ -59,12 +59,12 @@
       {
         "name": "I accept cookies",
         "aggregatedDurations": {
-          "median": 0.087992,
-          "average": 0.087992
+          "median": 0.093524,
+          "average": 0.093524
         },
         "durations": [
           {
-            "duration": 0.087992,
+            "duration": 0.093524,
             "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageAvailability.feature:8"
           }
         ]
@@ -77,12 +77,12 @@
       {
         "name": "I check the title Offene Stellen \"Offene Stellen\"",
         "aggregatedDurations": {
-          "median": 0.541229,
-          "average": 0.541229
+          "median": 0.297323,
+          "average": 0.297323
         },
         "durations": [
           {
-            "duration": 0.541229,
+            "duration": 0.297323,
             "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageAvailability.feature:9"
           }
         ]

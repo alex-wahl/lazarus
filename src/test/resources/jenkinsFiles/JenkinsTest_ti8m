@@ -1,49 +1,34 @@
 pipeline {
-      agent any
-      triggers {
-       cron('15 02 * * 5')
-      }
-
-      stages {
-       stage('Fetching data from GitHub') {
-        steps {
-         git branch: 'testing_ti8m',
-          credentialsId: '8f0c6cb8-ba71-4a29-a535-661ee2e3f06d',
-          url: 'https://github.com/alex-wahl/lazarus.git'
-         sh "ls -lat"
-        }
-       }
-
-       stage('Code compiling') {
-        steps {
-         echo 'Stage to execute the test case'
-         sh 'mvn test -Dcucumber.filter.tags="@CareerTi8mCareerAvailability"'
-        }
-       }
-
-       stage('Generating Cucumber report') {
-        steps {
-         echo 'Starting to generate the cucumber reports'
-         sleep(time: 5, unit: "SECONDS")
-         cucumber buildStatus: "UNSTABLE",
-          fileIncludePattern: "**/cucumber.json",
-          jsonReportDirectory: 'target'
-        }
-       }
-
-       stage('Sending email') {
-        steps {
-         echo 'Generating an email'
-          emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} Cucumber Report: ${env.BUILD_URL}cucumber-html-reports/overview-features.html", recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: "Report: Job ${env.JOB_NAME}: ${currentBuild.currentResult}", to: "walenberg@ya.ru"
-        }
-       }
-      }
-     }
-buildMonitorView('Lazarus') {
-   description('All Lazarus Jobs')
-   jobFilters {
-    jobs {
-     name('Ti8m')
+    agent any
+        triggers {
+            cron('15 02 * * 5')
     }
-   }
-  }
+
+    stages {
+        stage('Fetching data from GitHub') {
+        steps {
+            git branch: 'testing_ti8m',
+            credentialsId: '8f0c6cb8-ba71-4a29-a535-661ee2e3f06d',
+            url: 'https://github.com/alex-wahl/lazarus.git'
+            sh "ls -lat"
+            }
+        }
+
+    stage('Code compiling') {
+        steps {
+            echo 'Stage to execute the test case'
+            sh '/usr/local/Cellar/maven/3.8.7/libexec/bin/mvn test -Dcucumber.filter.tags="@CareerTi8mCareerAvailability"'
+            }
+        }
+
+    stage('Generating Cucumber report') {
+        steps {
+            echo 'Starting to generate the cucumber reports'
+            sleep(time: 5, unit: "SECONDS")
+            cucumber buildStatus: "UNSTABLE",
+            fileIncludePattern: "**/cucumber.json",
+            jsonReportDirectory: 'target'
+            }
+        }
+    }
+}

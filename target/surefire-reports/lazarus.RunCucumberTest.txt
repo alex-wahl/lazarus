@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: lazarus.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 132.349 sec - in lazarus.RunCucumberTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.436 sec <<< FAILURE! - in lazarus.RunCucumberTest
+Test status code(Testing Status Code of the given url.)  Time elapsed: 4.274 sec  <<< ERROR!
+java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html;charset=UTF-8'.
+

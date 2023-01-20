@@ -62,9 +62,9 @@ public class StepDefinitions extends StepHelper {
 
     @AfterStep
     public void takingScreenshot(Scenario scenario) {
-
-        byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-        scenario.embed(screenshot, "image/png");
-
+        if (driver != null) {
+            byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            scenario.embed(screenshot, "image/png");
+        }
     }
 }

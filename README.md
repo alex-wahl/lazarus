@@ -12,6 +12,7 @@ This framework is written in Java and based on
 - Cucumber
 - Rest Assured
 - Log4j
+- test
 
 It could work with Appium as well
 

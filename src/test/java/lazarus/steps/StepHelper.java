@@ -2,6 +2,7 @@ package lazarus.steps;
 
 import java.util.Random;
 
+import io.restassured.response.Response;
 import lazarus.backend.Requests;
 import lazarus.backend.model.ti8m.Welcome;
 import org.apache.log4j.Logger;
@@ -13,7 +14,7 @@ public class StepHelper {
 
     protected static WebDriver driver = null;
     protected static Requests session = null;
-    protected static Welcome login_session;
+    protected static Response login_session;
     protected static Logger logger = Logger.getLogger(MethodHandles.lookup().lookupClass());
 
     public String EmailGenerate() {

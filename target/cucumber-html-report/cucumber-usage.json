@@ -5,13 +5,49 @@
       {
         "name": "I start new session",
         "aggregatedDurations": {
-          "median": 0.001677,
-          "average": 0.001677
+          "median": 0.001806,
+          "average": 0.001806
         },
         "durations": [
           {
-            "duration": 0.001677,
+            "duration": 0.001806,
             "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageStatusCode.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I do call using url {string}",
+    "steps": [
+      {
+        "name": "I do call using url \"https://www.ti8m.com/de/career\"",
+        "aggregatedDurations": {
+          "median": 0.242207,
+          "average": 0.242207
+        },
+        "durations": [
+          {
+            "duration": 0.242207,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageStatusCode.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I check status code {string}",
+    "steps": [
+      {
+        "name": "I check status code \"200\"",
+        "aggregatedDurations": {
+          "median": 0.004373,
+          "average": 0.004373
+        },
+        "durations": [
+          {
+            "duration": 0.004373,
+            "location": "file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageStatusCode.feature:7"
           }
         ]
       }

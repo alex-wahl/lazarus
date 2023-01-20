@@ -13,9 +13,12 @@ public class Requests extends StepHelper {
     public static Map<String, String> Cookies;
 
     public Response call() {
-        Header header = new Header("User-Agent", "Mozilla/5.0");
-
-        Response response = given().header(header).when().post(url);
+        Header header_1 = new Header("User-Agent", "Mozilla/5.0");
+        Header header_2 = new Header("Content-type", "text/html;charset=UTF-8");
+        Response response = given().
+                header(header_1).
+                header(header_2).
+                when().post(url);
 
         Cookies = response.getCookies();
 

@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-01-20T00:22:13.355Z",
+        "start_timestamp": "2023-01-20T09:49:19.982Z",
         "before": [
           {
             "result": {
-              "duration": 67415000,
+              "duration": 66929000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 4279000,
+              "duration": 2340000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1677000,
+              "duration": 1806000,
               "status": "passed"
             },
             "line": 5,
@@ -46,7 +46,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 184000,
+                  "duration": 262000,
                   "status": "passed"
                 },
                 "match": {
@@ -55,7 +55,7 @@
               },
               {
                 "result": {
-                  "duration": 1002828000,
+                  "duration": 1004637000,
                   "status": "passed"
                 },
                 "match": {
@@ -67,9 +67,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was \u0027text/html;charset\u003dUTF-8\u0027.\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)\n\tat io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\n\tat io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)\n\tat io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)\n\tat lazarus.steps.StepsForBackend.iDoCallUsingUrl(StepsForBackend.java:15)\n\tat ✽.I do call using url \"https://www.ti8m.com/de/career\"(file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageStatusCode.feature:6)\n",
-              "duration": 2005007000,
-              "status": "failed"
+              "duration": 2242207000,
+              "status": "passed"
             },
             "line": 6,
             "name": "I do call using url \"https://www.ti8m.com/de/career\"",
@@ -85,7 +84,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 45000,
+                  "duration": 30000,
                   "status": "passed"
                 },
                 "match": {
@@ -94,7 +93,7 @@
               },
               {
                 "result": {
-                  "duration": 1004799000,
+                  "duration": 1004939000,
                   "status": "passed"
                 },
                 "match": {
@@ -106,8 +105,8 @@
           },
           {
             "result": {
-              "duration": 1879000,
-              "status": "skipped"
+              "duration": 4373000,
+              "status": "passed"
             },
             "line": 7,
             "name": "I check status code \"200\"",
@@ -123,8 +122,8 @@
             "after": [
               {
                 "result": {
-                  "duration": 49000,
-                  "status": "skipped"
+                  "duration": 33000,
+                  "status": "passed"
                 },
                 "match": {
                   "location": "lazarus.steps.StepDefinitions.takingScreenshot(io.cucumber.java.Scenario)"
@@ -132,8 +131,8 @@
               },
               {
                 "result": {
-                  "duration": 18000,
-                  "status": "skipped"
+                  "duration": 1003939000,
+                  "status": "passed"
                 },
                 "match": {
                   "location": "lazarus.steps.StepDefinitions.timeoutAfterStep()"

@@ -82,8 +82,7 @@ formatter.match({
   "location": "lazarus.steps.StepsForBackend.iDoCallUsingUrl(java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was \u0027text/html;charset\u003dUTF-8\u0027.\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)\n\tat io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\n\tat io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)\n\tat io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)\n\tat lazarus.steps.StepsForBackend.iDoCallUsingUrl(StepsForBackend.java:15)\n\tat ✽.I do call using url \"https://www.ti8m.com/de/career\"(file:///Users/alex/Desktop/github/lazarus/src/test/resources/features/CareerPageStatusCode.feature:6)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.afterstep({
   "status": "passed"
@@ -99,13 +98,13 @@ formatter.match({
   "location": "lazarus.steps.StepsForBackend.iCheckStatusCode(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
